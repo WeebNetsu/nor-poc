@@ -1,0 +1,8 @@
+ignore
+
+.idea/
+.vscode/
+build/
+ignore/
+tmp/
+pkg/
