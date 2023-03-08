@@ -29,7 +29,7 @@ Structure:
   - Your application configuration
   - `locales/`
     - Language files for your application.
-  - `nimja.conf.nim`
+  - `nimja_conf.nim`
     - Configuration for Nimja
   - `routes.nim`
     - Routes for your application

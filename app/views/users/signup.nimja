@@ -1,0 +1,6 @@
+{%block content%}
+<h1>Signup</h1>
+
+<input type="text" placeholder="text">
+<input type="password" placeholder="password">
+{%endblock%}
