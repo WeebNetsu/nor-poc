@@ -7,6 +7,6 @@ proc renderIndex*(title: string): string =
     ## so it can access all variables like `title` and `users`
     ## the return variable could be `string` or `Rope` or
     ## anything which has a `&=`(obj: YourObj, str: string) proc.
-    compileTemplateFile(getScriptDir() / "app" / "views" / &"{title}.nimja")
-    # compileTemplateStr("get rekt")
-    # return "x"
+    return compileTemplateFile(getScriptDir() / "app" / "views" / &"{title}.nimja")
+    # let filePath = getScriptDir() / "app" / "views" / &"{title}.nimja"
+    # return readFile(filePath)

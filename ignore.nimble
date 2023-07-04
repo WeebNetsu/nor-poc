@@ -10,7 +10,18 @@ bin           = @["ignore"]
 
 # Dependencies
 
-requires "nim >= 1.6.10"
-requires "prologue >= 0.6.4"
+requires "nim >= 1.6.14"
+# requires "prologue >= 0.6.4"
 requires "allographer >= 0.24.0"
 requires "nimja >= 0.8.6"
+requires "jester >= 0.6.0"
+
+# task hello, "just a test":
+#     echo "nimble run"
+
+# preBuild:
+#   echo "Running pre-build script"
+#   nim c -r my_script.nim
+
+# before run:
+#     echo "Hello test"
