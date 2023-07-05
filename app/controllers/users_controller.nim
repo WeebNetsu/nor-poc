@@ -1,10 +1,13 @@
 import pkg/prologue
 from os import `/`
+from pkg/nimja import compileTemplateFile
 
-import ../../config/nimja_conf
+from ../../config/constants import VIEW_PATH
 
 proc user_sign_up*(ctx: Context) {.async.} =
-    # ! consider using https://nim-lang.org/docs/htmlparser.html or https://nim-lang.org/docs/filters.html instead of Nimja
-    # current implementation does not allow dynamic filename insertion, especially since
-    # {.compiletime.} cannot be used with {.async.}
-    resp renderIndex("users" / "signup")
+    proc renderIndex(title: string): string =
+        # render the template file, pass title variable into the template
+        compileTemplateFile(VIEW_PATH / "users" / "signup.nimja")
+
+    # https://github.com/enthus1ast/nimja/blob/master/examples/prologue/serverPrologue.nim
+    resp renderIndex("title")

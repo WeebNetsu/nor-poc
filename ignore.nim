@@ -18,3 +18,4 @@ rt.generate_routes(app)
 
 # this will run your app
 app.run()
+
