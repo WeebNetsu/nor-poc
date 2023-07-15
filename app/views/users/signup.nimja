@@ -1,6 +1,6 @@
-{%block content%}
+{% extends app/views/layouts/_application.nimja%} {%block content%}
 <h1>Signup</h1>
 
-<input type="text" placeholder="text">
-<input type="password" placeholder="password">
+<input type="email" placeholder="email" />
+<input type="password" placeholder="password" />
 {%endblock%}
