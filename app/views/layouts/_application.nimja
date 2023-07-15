@@ -16,6 +16,5 @@
 	</head>
 	<body>
 		{%block content%}{%endblock%}
-		<p>test</p>
 	</body>
 </html>

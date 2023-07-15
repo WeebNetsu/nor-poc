@@ -1,11 +1,11 @@
-import allographer/schema_builder
+import pkg/[allographer/schema_builder]
 import connection
 
 proc generate_schema*() =
     rdb.create([
         table("users", [
-        Column.increments("id"),
-        Column.string("email"),
-        Column.string("password"),
+            Column.increments("id"),
+            Column.string("email"),
+            Column.string("password"),
         ])
     ])
