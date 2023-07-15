@@ -58,3 +58,14 @@ Structure:
 
 - `tmp`
   - Temporary directory, for temporary files.
+
+### Useful Links
+
+- [Nim](https://nim-lang.org)
+- [Prologue](https://github.com/planety/prologue) - for endpoints
+- [Nimja](https://github.com/enthus1ast/nimja) - for html templates
+- [Allographer](https://github.com/itsumura-h/nim-allographer) - working with databases
+
+### Support me
+
+Feel free to subscribe to my YouTube channel, [Steve's teacher](https://www.youtube.com/@Stevesteacher), or to donate!

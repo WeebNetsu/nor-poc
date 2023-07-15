@@ -12,6 +12,5 @@ bin           = @["ignore"]
 
 requires "nim >= 1.6.14"
 requires "prologue >= 0.6.4"
-requires "allographer >= 0.24.0"
 requires "nimja >= 0.8.6"
 requires "allographer >= 0.25.1"

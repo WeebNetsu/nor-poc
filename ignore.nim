@@ -1,8 +1,10 @@
 import pkg/[prologue, allographer/query_builder]
 
 import config/routes as rt
-import db/connection as conn
-import db/schema as schema
+import db/[
+    connection as conn,
+    schema as schema
+]
 
 let
     env = loadPrologueEnv(".env")
